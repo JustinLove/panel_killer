@@ -1,0 +1,20 @@
+{
+  "author": "wondible",
+  "build": "70289",
+  "category": ["in-game", "ui", "modding"],
+  "context": "client",
+  "date": "2014/08/17",
+  "description": "Remove panels (processes) to reduce memory and load times.",
+  "display_name": "Panel Killer",
+  "forum": null,
+  "identifier": "com.wondible.pa.panel_killer",
+  "priority": 100,
+  "scenes": {
+    "live_game": [
+      "coui://ui/mods/panel_killer/panel_killer.js"
+    ]
+  },
+  "signature": "not yet implemented",
+  "version": "0.1.0"
+}
+
