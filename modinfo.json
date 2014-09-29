@@ -1,12 +1,12 @@
 {
   "author": "wondible",
-  "build": "70289",
+  "build": "72332",
   "category": ["in-game", "ui", "modding"],
   "context": "client",
-  "date": "2014/08/17",
+  "date": "2014/09/29",
   "description": "Remove panels (processes) to reduce memory and load times.",
   "display_name": "Panel Killer",
-  "forum": null,
+  "forum": "https://forums.uberent.com/threads/wip-panel-killer.62999/",
   "identifier": "com.wondible.pa.panel_killer",
   "priority": 100,
   "scenes": {
@@ -15,6 +15,6 @@
     ]
   },
   "signature": "not yet implemented",
-  "version": "0.1.0"
+  "version": "0.2.0"
 }
 

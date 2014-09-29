@@ -38,4 +38,5 @@
       $(panel).remove()
     }
   })
+  api.Panel.bindPanels();
 })()
