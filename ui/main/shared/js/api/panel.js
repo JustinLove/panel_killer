@@ -437,7 +437,7 @@ $(document).ready(function() {
     var blacklist = [
       "building_planets",
       //"popup", // sure you want to exit etc DELETE UNIT
-      //"bottom_right_pip_border",
+      "bottom_right_pip_border",
       //"pip_br_tl", // options
       "pip_br_tr", // close button
       "version",
