@@ -333,6 +333,7 @@ function init_panel() {
         engine.call('panel.messageById', this.id, message, JSON.stringify(payload) || '');
     };
     
+    var lastQueryId = _.now() % 10000;
     var lastQueryId = 0;
     var queries = {};
     var onQueryResponse = function(payload) {
@@ -439,8 +440,6 @@ $(document).ready(function() {
       //"popup", // sure you want to exit etc DELETE UNIT
       "bottom_right_pip_border",
       //"pip_br_tl", // options
-      "pip_br_tr", // close button
-      "version",
       //"econ",
       "header",
       //"players",
