@@ -72,6 +72,8 @@ function init_panel() {
             config.border = $div.attr('border');
         if (!config.hasOwnProperty('layout'))
             config.layout = testAttrFlag($div, 'layout');
+         if (!config.hasOwnProperty('noGPU'))
+            config.noGPU = testAttrFlag($div, 'no-gpu');
         if (!config.hasOwnProperty('name'))
             config.name = $div.attr('id');
         if (config.hasOwnProperty('visible'))
@@ -89,6 +91,7 @@ function init_panel() {
         result.name = config.name || '';
         result.src = config.src || '';
         result.layout = !!config.layout;
+        result.noGPU = !!config.noGPU;
         result.noInput = !!config.noInput;
         result.noKeyboard = !!config.noKeyboard;
         result.yieldFocus = !!config.yieldFocus;

@@ -1,3 +1,7 @@
+## 1.0.2
+
+- Update for no-gpu flag in 86765
+
 ## 1.0.1
 
 - Update for minor change in 86422
