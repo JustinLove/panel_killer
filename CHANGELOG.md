@@ -1,3 +1,8 @@
+## 1.0.3
+
+- Update commented panel list circa 88288
+- Stubs for some unconditional api.panels.id.message calls
+
 ## 1.0.2
 
 - Update for no-gpu flag in 86765

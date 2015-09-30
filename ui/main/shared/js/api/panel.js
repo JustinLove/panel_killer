@@ -439,34 +439,37 @@ init_panel(api);
 $(document).ready(function() {
   (function() {
     var blacklist = [
-      "building_planets",
-      //"popup", // sure you want to exit etc DELETE UNIT
-      "bottom_right_pip_border",
-      //"pip_br_tl", // options
-      //"econ",
       "header",
+      //"econ",
       //"players",
-      //"devmode", // already kind of shut off
-      //"sandbox", // ditto
       //"planets",
-      //"message", // spawn commander, annihliate planet, etc
-      //"menu", //exit, settings
-      //"chat",
       //"celestial_control",
       //"unit_alert",
       "preview_pip_border",
-      //"gamestats",
       //"action_bar",
+      //"devmode", // already kind of shut off
+      //"sandbox", // ditto
+      //"chat",
+      "building_planets",
+      //"popup", // sure you want to exit etc DELETE UNIT
+      //"message", // spawn commander, annihliate planet, etc
+      //"game_paused_panel",
+      //"gamestats",
+      //"game_over_panel",
+      //"settings",
+      //"player_guide",
+      "bottom_right_pip_border",
+      //"pip_br_tl", // options
       "footer",
+      //"selection",
       //"build_hover",
       //"build_bar",
       //"options_bar", // pip, cronocam, uberbar, etc
+      //"menu", //exit, settings
+      //"control_group_bar",
       //"time_bar",
-      //"selection",
-      //"world_popup_panel", // hover
-      //"game_paused_panel",
-      //"game_over_panel",
-      //"settings",
+      //"unit_hover_info",
+      //"tutorial",
     ]
     if (window.location.href == 'coui://ui/main/game/live_game/live_game.html') {
       $('panel').each(function(i, panel) {
@@ -474,6 +477,14 @@ $(document).ready(function() {
         if (blacklist.indexOf(panel.id) != -1) {
           console.log('remove', panel.id)
           $(panel).remove()
+          // these have unconditional api.panels.id calls
+          if (panel.id == 'unit_alert' || panel.id == 'control_group_bar') {
+            console.log('stubbing panel', panel.id)
+            api.panels[panel.id] = {
+              message: function() {},
+              update: function() {}
+            }
+          }
         }
       })
     }

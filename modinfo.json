@@ -1,15 +1,15 @@
 {
   "author": "wondible",
-  "build": "86765",
+  "build": "88288",
   "category": ["in-game", "ui", "performance"],
   "context": "client",
-  "date": "2015/08/27",
+  "date": "2015/09/30",
   "description": "Remove panels (processes) to reduce memory and load times.",
   "display_name": "Decorative Panel Killer",
   "forum": "https://forums.uberent.com/threads/rel-decorative-panel-killer.66108/",
   "identifier": "com.wondible.pa.panel_killer",
   "priority": 100,
   "signature": "not yet implemented",
-  "version": "1.0.2"
+  "version": "1.0.3"
 }
 
